@@ -1,0 +1,127 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#canvas {
+    background-color: rgb(235, 232, 232);
+}
+#container {
+    position: relative;
+}
+
+#container-menu {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    border: 2px solid rgb(88, 88, 88);
+    width: fit-content;
+    border-radius: 15px;
+    position: absolute;
+    top: 45%;
+    left: 30%;
+    height: fit-content;
+    background-color: aliceblue;
+    opacity: 0; /* Empieza invisible */
+    transition: opacity 0.5s ease; /* Solo animamos la opacidad */
+    z-index: -10;
+}
+
+#container-menu.show {
+    opacity: 1; /* Menú visible */
+    transition: opacity 0.5s ease; /* Animación de fade-in */
+    z-index: 100;
+}
+
+
+
+
+.container-option-menu {
+
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px ;
+    width: 35px;
+    cursor: pointer;
+
+    &&.seleccionado {
+        background-color: black;
+    }
+}
+
+/* .container-option-menu .seleccionado {
+    background-color: black;
+} */
+
+
+.option-menu  {
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px ;
+    width: 30px;
+    box-shadow: 0px 0px 5px ;
+}
+
+.rojo{
+    background-color: rgb(226, 31, 31);
+}
+
+.naranja{
+    background-color: rgb(214, 146, 19);
+}  
+
+.amarillo{
+background-color: rgb(196, 199, 7);
+}  
+.verde{
+    background-color: rgb(9, 221, 45);
+}  
+.celeste{
+    background-color: rgb(23, 207, 231);
+}  
+.azul{
+    background-color: rgb(34, 34, 194);
+}   
+.borrar {
+    background-color: aliceblue;
+}
+
+.borrar img{
+    width: 25px;
+    height: 25px;
+}
+
+#container-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+#button-borrar {
+    padding: 5px;
+    border-radius: 15px;
+    border-color: rgb(218, 31, 31);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    background-color: aliceblue;
+    transition: 100ms;
+}
+
+#button-borrar:hover {
+    color: aliceblue;
+    background-color: rgb(236, 81, 81);
+    
+}
+
+
+
+
+
+
+
+  
